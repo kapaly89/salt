@@ -1,2 +1,9 @@
-{% if grains['id'] == '^(?!minion).*$' %}
-  {{ mdebug("aleeee") }}
+#{% if grains['id'] == '^(?!minion).*$' %}
+#  {{ mdebug("aleeee") }}
+
+'blabla':
+  pkg.installed:
+    - pkgs: 
+      - emacs
+
+
